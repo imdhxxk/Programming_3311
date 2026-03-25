@@ -16,7 +16,17 @@ const resultH1 = document.getElementById("result")
 //     resultH1.innerHTML = num
 // }
 
-const plus = () => {
-    num++
+const update = (number = 1) => {
+    // if(number == 0){
+    //     num=number;
+    // }else{
+    //     num+=number
+    // }
+    num+=number
+
+    resultH1.innerHTML = num;
+}
+const reset = () => {
+    num = 0;
     resultH1.innerHTML = num;
 }

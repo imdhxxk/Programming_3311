@@ -9,3 +9,4 @@ npm create vite@latest .
 - ` useState()`
 - `onClick={() => set함수()}`
 - `onClick={() => set함수((이전 state) => 이전 state + 1)}`
+# TodoListApp 💩

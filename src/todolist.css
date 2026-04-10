@@ -49,6 +49,7 @@
 }
 
 .todo__label {
+    cursor: pointer;
     margin:0 10px;
     flex: 1;
 }

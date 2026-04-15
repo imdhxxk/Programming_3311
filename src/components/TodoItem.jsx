@@ -2,11 +2,10 @@ import React from 'react'
 import Checkbox from './Checkbox'
 import Button from './Button'
 
-export default function TodoItem(props) {
-    const  {id,todo,...rest} = props;
+export default function TodoItem() {
     return (
         <li className="todo__item todo__item--complete">
-            <Checkbox id={id}>{todo}</Checkbox>
+            <Checkbox id="1">Todo1</Checkbox>
             <Button className="todo__button todo__button--edit">✏️</Button>
             <Button className="todo__button todo__button--delete">❌</Button>
         </li>

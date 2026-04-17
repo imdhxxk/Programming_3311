@@ -21,7 +21,6 @@ export default function TodoListApp() {
         ...todos,
         new Todo(text)
         
- 
     ]);
 
     return (

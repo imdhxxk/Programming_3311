@@ -22,12 +22,19 @@ export default function TodoListApp() {
         new Todo(text)
         
     ]);
-
+    const toggleTodo = (id) => {
+        setTodos((todos) =>
+        //todos에서 하나씩 꺼내어 todo. todo의 id 와id가 같담ㄴ, 기존 todo.isCOmpleted의 반대값으로 isCompleted를 수정 아니면 그대로
+            todos.map((todo) => 
+             todo.id ===id ? {...todo, isCompleted : !todo.isCompleted} : todo
+            )
+        )
+    }
     return (
         <div className="todo">
             <TodoHeader />
             <TodoAdder addTodo={addTodo}/>
-            <TodoList todos={todos} />
+            <TodoList todos={todos} toggleTodo={toggleTodo}/>
         </div>
     );
 

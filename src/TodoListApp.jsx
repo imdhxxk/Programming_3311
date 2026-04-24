@@ -30,11 +30,22 @@ export default function TodoListApp() {
             )
         )
     }
+    const deleteTodo = (id) => {
+        //todos에서 하나씩 꺼내어 todo. todo의 id 와id가 같다면, 그 todo는 빼고 나머지 그대로
+        setTodos((todos) => 
+            todos.filter((todo) => todo.id !== id))
+    }
+
+
+
+
+
+
     return (
         <div className="todo">
             <TodoHeader />
             <TodoAdder addTodo={addTodo}/>
-            <TodoList todos={todos} toggleTodo={toggleTodo}/>
+            <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
         </div>
     );
 

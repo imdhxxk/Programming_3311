@@ -19,14 +19,22 @@ npm create vite@latest .
 - 구조 분해 할당, `...스프레드 연산자`
 - `<form onSubmit\{}></from>`
 - `map()` : RU, `filter()` : D
-- `<TodoItem key={} />
-- const handleEvent = (event) => {}`
+- `<TodoItem key={} />`
+- `const handleEvent = (event) => {}`
 - `{조건식 ? 참 : 거짓}`
 - `{조건식 && 참}`
 - `{!조건식 && 거짓}`
 - LocalStorage, `useEffect()`
-
-
+- `style={{}}`
+- homeApp : state 값을 변경하여 컴포넌트를 표시하자
+- `npm install react-router-dom`
+- ```javascript
+ <BrowserRouter>
+    <Routes>
+        <Route path="/" element={} />
+    </Routes>
+ </BrowserRouter>
+```
 
 
 
